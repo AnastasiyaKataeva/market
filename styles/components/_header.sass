@@ -1,0 +1,35 @@
+.header
+    height: 75px
+    background: #222222
+    padding: 18px 16px
+    box-sizing: border-box
+
+    @media (max-width: 768px)
+        height: 74px
+        padding: 18px 32px
+
+    @media (max-width: 425px)
+        height: 74px
+        padding: 18px 16px
+
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        .menu_link_left
+            display: flex
+            list-style-type: none
+            align-items: center
+
+            .link_item
+                @media (max-width: 425px)
+                    display: none
+
+            .link_item,
+            .menu
+                @include menu-offset
+
+        .menu_link_right
+            .search
+                @include menu-offset

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,3000,4000,7000,9001,3001,400&display=swap')
+@import "components/variables"
+@import "components/mixins"
+@import "components/container"
+@import "components/header"
+@import "components/top"
+
+*
+    margin: 0
+    padding: 0
+
+body
+    font-family: Lato, sans-serif
+
+.slider
+    position: relative
+
+    .images
+        img
+            object-fit: cover
+            width: 100%
+            height: 776px
+            @media (max-width: 768px)
+                height: 624px
+
+    .arrow
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 47px
+        width: 47px
+        background: rgba(42, 42, 42, 0.15)
+        position: absolute
+        top: 365px
+
+        @media (max-width: 768px)
+            top: 288px
+
+        &.arrow-right
+            right: 17px
+
+        &.arrow-left
+            left: 17px
+
+.collection
+    border: 1px solid #c4c4c4
+    width: 1141px
+    height: 601px
+    padding: 64px 292px
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    align-items: center
+    background: #FFFFFF
+    position: relative
+    top: -64px
+    margin: 0 auto
+
+    @media (max-width: 768px)
+        width: 100%
+        height: 601px
+        padding: 64px 108px
+        border: none
+        border-bottom: 1px solid #c4c4c4
+        top: 0
+    @media (max-width: 435px)
+        padding: 64px 22px
+
+    &__header
+        color: $color-pink
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+
+    .pink_bloc
+        background: $color-pink
+        width: 63px
+        height: 3px
+        margin: 12px 0
+
+    &__title
+        font-weight: 300
+        font-size: 18px
+        line-height: 22px
+
+    &__direct
+        text-align: center
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #5E5E5E
+        padding: 32px 0
+
+    &__price
+        color: $color-pink
+        font-weight: 300
+        font-size: 24px
+        line-height: 130%
+
+    .grey_bloc
+        width: 641px
+        height: 1px
+        background: #EAEAEA
+        margin: 64px 0
+
+        @media (max-width: 425px)
+            width: 174px
+            margin: 32px 0
+
+    &__menu
+        display: flex
+        justify-content: space-around
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        margin-bottom: 48px
+
+        @media (max-width: 425px)
+            font-size: 10px
+            line-height: 12px
+            padding-left: 30px
+
+        span
+            padding-right: 22px
+
+            @media (max-width: 425px)
+                padding-right: 10px
+
+            img
+                padding-left: 9px
+
+    .add_to_cart
+        @include button(16px, 14px 56px)
+
+        img
+            margin-right: 22px

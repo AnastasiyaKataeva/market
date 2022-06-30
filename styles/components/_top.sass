@@ -1,0 +1,36 @@
+.top
+    background: $background-rose
+
+    .top_info_catalog
+        height: 148px
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        @media (max-width: 768px)
+            padding-left: 16px
+            padding-right: 16px
+
+        @media (max-width: 425px)
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+        .title_catalog
+            font-weight: 400
+            font-size: 24px
+            line-height: 29px
+            color: $color-pink
+
+        .link_menu_catalog
+            a
+                font-weight: 300
+                font-size: 14px
+                line-height: 17px
+                color: #636363
+                text-decoration: none
+
+                &:last-child
+                    color: $color-pink
+                    font-weight: 700
