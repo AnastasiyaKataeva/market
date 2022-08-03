@@ -1,0 +1,22 @@
+
+.row
+    --bs-gutter-x: 16px
+    --bs-gutter-y: 16px
+
+    @include media-breakpoint-up(lg)
+        --bs-gutter-x: 30px
+        --bs-gutter-y: 30px
+
+    .card
+        border: none
+
+        .card-body
+            background: #F8F8F8
+
+        span
+            color: $color-pink
+
+button
+    display: block
+    margin: 0 auto
+    @include button-border(16px, 14px 38px)

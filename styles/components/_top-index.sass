@@ -1,0 +1,84 @@
+.top-index
+    background: $background-rose
+    height: 375px
+    position: relative
+
+    @include media-breakpoint-up(md)
+        height: 367px
+    @include media-breakpoint-up(xxl)
+        height: 764px
+
+    .container
+
+        height: inherit
+
+        .top-info
+            height: inherit
+            --bs-gutter-y: 0px
+
+            img
+                width: 100%
+                object-fit: cover
+                height: 100%
+
+            .info-heading
+                height: 100%
+                display: flex
+                flex-direction: column
+                justify-content: center
+
+                div:first-child
+                    border-left: 9px solid $color-pink
+                    padding-left: 6px
+                    font-size: 38px
+                    font-weight: 900
+                    line-height: 45px
+                    color: #222222
+                    @include media-breakpoint-up(md)
+                        font-size: 44px
+                        line-height: 52px
+                    @include media-breakpoint-up(lg)
+                        font-size: 48px
+                        line-height: 57px
+
+                div:last-child
+                    border-left: 9px solid $color-pink
+                    padding-left: 6px
+                    font-size: 20px
+                    line-height: 24px
+                    font-weight: 700
+                    @include media-breakpoint-up(md)
+                        font-size: 24px
+                        line-height: 28px
+                    @include media-breakpoint-up(lg)
+                        font-size: 31px
+                        line-height: 37px
+
+                    span
+                        color: $color-pink
+
+    .top-hover-menu
+        background: $color-wite
+        display: block
+        position: absolute
+        top: 0
+        right: 0
+        height: inherit
+        width: 232px
+        padding-top: 37px
+        padding-left: 34px
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+        .hover-menu
+            font-weight: 400
+            font-size: 14px
+            line-height: 17px
+
+            .name-hover-menu
+                color: $color-pink
+
+            ul
+                list-style: none
+
+                li
+                    margin-bottom: 12px

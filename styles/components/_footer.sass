@@ -1,0 +1,57 @@
+section
+    background-image: url("#{$imagesPath}/photo subscribe.jpg")
+    background-size: cover
+    height: 550px
+    @include media-breakpoint-up(md)
+        height: 693px
+    @include media-breakpoint-up(lg)
+        height: 448px
+
+    & .container
+        display: flex
+        justify-content: space-around
+        align-items: center
+        height: 550px
+        @include media-breakpoint-up(md)
+            height: 693px
+        @include media-breakpoint-up(lg)
+            height: 448px
+
+        .section-item-left
+            text-align: center
+            width: 343px
+            @include media-breakpoint-up(md)
+                width: 360px
+
+            img
+                margin-bottom: 30px
+
+        .section-item-right
+            text-align: center
+
+            h6
+                font-weight: 700
+                font-size: 24px
+                line-height: 30px
+
+            p
+                margin-bottom: 40px
+
+            input
+                background: #E1E1E1
+                font-weight: 400
+                font-size: 14px
+                line-height: 17px
+                padding-left: 22px
+                padding-top: 9px
+                padding-bottom: 9px
+                border: none
+                border-bottom-left-radius: 15px
+                border-top-left-radius: 15px
+                margin-right: -4px
+
+            button
+                @include button-bcg(14px, 7px)
+                display: inline
+                border-bottom-right-radius: 15px
+                border-top-right-radius: 15px

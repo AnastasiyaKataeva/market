@@ -1,0 +1,24 @@
+{
+  "name": "market",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded styles:styles",
+    "sass-prod": "sass --no-source-map --style=compressed styles:styles",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnastasiyaKataeva/prof.verstka.git"
+  },
+  "author": "Anastasiya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnastasiyaKataeva/prof.verstka/issues"
+  },
+  "homepage": "https://github.com/AnastasiyaKataeva/prof.verstka#readme",
+  "devDependencies": {
+    "bootstrap": "^5.2.0",
+    "sass": "^1.54.1"
+  }
+}

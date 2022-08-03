@@ -1,0 +1,57 @@
+.categories
+    padding-top: 65px
+    padding-bottom: 96px
+    @include media-breakpoint-only(md)
+        padding-top: 20px
+        padding-bottom: 154px
+
+    .card-images
+        .row
+            @include make-row(10px)
+            --#{$variable-prefix}gutter-y: 10px
+            @include media-breakpoint-up(md)
+                @include make-row(20px)
+                --#{$variable-prefix}gutter-y: 20px
+            @include media-breakpoint-up(lg)
+                @include make-row(30px)
+                --#{$variable-prefix}gutter-y: 30px
+
+            .card-women, .card-men, .card-group, .card-luxirous
+                position: relative
+
+                .img-fluid
+                    width: 100%
+
+                .card-text
+                    position: absolute
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    top: 40%
+                    left: 25%
+                    color: $color-wite
+                    font-size: 16px
+                    line-height: 19px
+                    font-weight: 400
+                    @include media-breakpoint-down(md)
+                        left: 35%
+
+            .card-luxirous
+                position: relative
+
+                .img-fluid
+                    @include media-breakpoint-down(md)
+                        height: 116px
+                        object-fit: cover
+
+                .card-text
+                    top: 30%
+                    left: 40%
+                    @include media-breakpoint-down(md)
+                        left: 30%
+
+            span
+                color: $color-pink
+                font-size: 24px
+                font-weight: 700
+                line-height: 28px
